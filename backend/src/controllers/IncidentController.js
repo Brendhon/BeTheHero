@@ -34,7 +34,7 @@ module.exports = {
 
         //Retornando todas as incidents cadastradas - Esquema de paginação
         const incidents = await connection('incidents')
-            .join('ongs', 'ong_id', '=', 'incidents.ong_id')
+            .join('ongs', 'incidents.ong_id', '=', 'ongs.id')
             .limit(5) //Limitando o numero de casos que sera chamado
             .offset((page - 1) * 5) //Pulando de 5 em 5 
             .select(['incidents.*',
