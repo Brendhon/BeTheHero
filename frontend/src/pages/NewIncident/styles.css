@@ -1,0 +1,73 @@
+.back-link{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #41414d;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.back-link:hover{
+    opacity: 0.8;
+}
+
+.back-link svg{
+    margin-right:  8px;
+}
+
+.back-link text{
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.newincident-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newincident-container .contant {
+    width: 100%;
+    padding: 96px;
+    background: #f0f0f6;
+    box-shadow: 0 0 100px rgba(0, 0, 0 , 0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newincident-container .contant section {
+    width: 100%;
+    max-width: 380px;
+}
+
+.newincident-container .contant section h1{
+    font-size: 32px;
+    margin-bottom: 32px;
+    margin: 64px 10px 32px;
+}
+
+.newincident-container .contant section p{
+    font-size: 18px;
+    margin-bottom: 32px;
+    margin: 0 10px 0;
+    color: #737380;
+    line-height: 32px;
+}
+
+.newincident-container .contant form {
+    width: 100%;
+    max-width: 550px;
+}
+
+.newincident-container .contant form input {
+    margin-top: 8px;
+}
+
