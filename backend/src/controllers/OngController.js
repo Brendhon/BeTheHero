@@ -1,8 +1,9 @@
 //Importando a configuração de desenvolvimento
 const connection = require('../database/connection')
 
-//Criptografia
-const crypto = require('crypto')
+const generateUniqueId = require('../utils/generateUniqueId')
+
+
 
 module.exports = {
 
@@ -11,8 +12,7 @@ module.exports = {
         //Todos os dados que foram passados no corpo da requisição por JSON
         const { name, email, whatsapp, city, uf } = request.body
 
-        //Criando um ID de 4 bytes aleatorios, trasformando em uma string do tipo hexadecimal
-        const id = crypto.randomBytes(4).toString('HEX')
+        const id = generateUniqueId()
 
         //Conexão com o banco, inserido oq foi passado no body para o banco
         await connection('ongs').insert({

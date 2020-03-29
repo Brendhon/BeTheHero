@@ -4,6 +4,8 @@ const express = require('express')
 //Importação do modulo que ira determinar quem poderá acessar a aplicação
 const cors = require('cors')
 
+const { errors } = require('celebrate')
+
 //Importação de arquivos
 const routes = require('./routes')
 
@@ -20,14 +22,16 @@ app.use(cors())
 //Usando o routes
 app.use(routes)
 
-app.listen(3333)
+app.use(errors())
+
+module.exports = app
 /**
  * Rota / Recurso
 */
 
 /**
  * Métodos HTTP
- * 
+ *
  * GET: Buscar/Listar uma informação do back-end
  * POST: Criar uma informação no back-end
  * PUT: Alterar uma informação no back-end
@@ -36,9 +40,9 @@ app.listen(3333)
 
 /**
  * Tipos de Parâmetros:
- * 
+ *
  * Query Params: Enviados após "?" (Filtros, paginação) 'query'
  * Route Params: Utilizado para identificar recursos 'params'
  * Request Body: Corpo da requisição 'body'
- * 
+ *
 */
