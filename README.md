@@ -8,7 +8,7 @@
 
 Aplicação para conectar ONGs a pessoas que podem ajudar.
 
-Projeto realizado durante a **Semana OmniStack 11.0** oferecido pela [Rocketseat](https://rocketseat.com.br/).
+Projeto realizado durante a **Semana OmniStack 11.0** oferecido pela **[Rocketseat](https://rocketseat.com.br/)**.
 
 ---
 
