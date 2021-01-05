@@ -62,8 +62,6 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 **[Git](https://git-scm.com)** e **[Node.js](https://nodejs.org/en/)**.<br> 
 
-É necessário que o **Backend** do projeto esteja em execução.
-
 Recomendações:
 * Um editor para trabalhar com o código como **[VSCode](https://code.visualstudio.com/)**
 ```bash
@@ -73,7 +71,7 @@ $ git clone https://github.com/Brendhon/BeTheHero.git
 
 # Acesse a pasta do projeto
 
-# Entre nas pastas Backend, Frontend e Mobile e instale as dependências
+# Entre nas pastas backend, frontend e mobile e instale as dependências
 $ npm install
 
 ```
@@ -92,7 +90,7 @@ $ npm start
 
 ```bash
 
-# Vale lembrar que o Backend deve estar em exucução
+# Vale lembrar que o Backend deve estar em execução
 
 # Entre na pasta Frontend e execute a aplicação
 $ npm start
@@ -105,7 +103,7 @@ $ npm start
 
 ```bash
 
-# Vale lembrar que o Backend deve estar em exucução
+# Vale lembrar que o Backend deve estar em execução
 
 # Entre na pasta Mobile e execute a aplicação
 $ npm start
